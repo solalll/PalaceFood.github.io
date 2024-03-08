@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="inscription.css" />
+    <meta charset="UTF-8" />
+    <title>Palace Food</title>
+  </head>
+  <body>
+    <img class="droit" src="reseau.png" alt="rose" width="80px" />
+    <img class="gauche" src="reseau.png" alt="rose" width="80px" />
+
+    <h1>Inscription</h1>
+    <form>
+      <div class="name-field">
+        
+        <div>
+          <label>Nom</label>
+          <input type="text" required />
+          <div>
+            <label>Prénon</label>
+            <input id="nom" type="text" required />
+          </div>
+        </div>
+
+        <label>Adresse Mail </label>
+        <input id="email" type="email" required />
+        <label>Mot de passe</label>
+        <input required id="mdp" type="password" /> 
+        <button type="button" id="togglePassword">
+          Afficher le mot de passe
+        </button>
+        <br />
+        <br />
+        <label>Date de naissance</label>
+        <br />
+        <input type="date" required />
+        <br />
+        <br />
+        <input id="sub" type="submit" value="S'inscrire" />
+        <p>Vous avez déjà un compte ? :</p>
+        <a class="co" href="connexion.html">connexion</a>
+      </div>
+    </form>
+
+    <a class="acceuill" href="index.html">
+      revenir à l'acceuil <img class="dr" src="vin.png" width="48" alt="vin" />
+      <img class="ga" src="rsv.png" width="35" alt="rsv" />
+    </a>
+    </body>     
+
+    <script src="java.js"></script>
+    <script>
+      document
+        .getElementById("togglePassword")
+        .addEventListener("click", function () {
+          var mdpInput = document.getElementById("mdp");
+          if (mdpInput.type === "password") {
+            mdpInput.type = "text";
+            this.textContent = "Masquer le mot de passe";
+          } else {
+            mdpInput.type = "password";
+            this.textContent = "Afficher le mot de passe";
+          }
+        });
+    </script>
+  </body>
+</html>

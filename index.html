@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <title>Palace Food</title>
+  <link rel="icon" type="image/png" href="Logo.png">
+</head>
+
+
+<body>
+  
+  <img class="gauche" src="etoile.png" alt="etoile">
+  <img class="droit" src="etoile.png" alt="etoile">
+
+  
+  <h1>Palace Food</h1>
+  <a class="mentions" href="mentionlegal.html">Mentions l'égales</a>
+
+  
+  <div>
+
+
+  </div>
+  <label class="rsvL" for="rsv">
+    <button class="rsv" onclick="goToPage('formulaire.html')">Réserver une table <img class="rsvv" src="rsv.png" alt="carte" width="225"></button>
+  </label>
+  <label class="carteL">
+    <button class="carte" onclick="goToPage('plat.html')">Menu<img class="cartee" src="vin.png" alt="carte" width="400"></button>
+  </label>
+  
+  
+  <button class="in" onclick="goToPage('inscription.html')">Inscription</button>
+  <button class="co" onclick="goToPage('connexion.html')">Connexion</button> 
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

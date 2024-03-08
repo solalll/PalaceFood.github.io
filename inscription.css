@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background: #3d3c3c;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  color: yellow;
+}
+
+.name-field {
+  margin: 30px auto;
+  width: 80%;
+  padding: 20px;
+  background: #6e6a6a;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px yellow;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 202, 5);
+}
+.ame-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.name-field label {
+  font-weight: bolder;
+}
+
+.name-field input[type="text"],
+.name-field input[type="email"],
+.name-field input[type="password"],
+.name-field input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid yellow;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #3d3c3c;
+  color: yellow;
+}
+
+.name-field input[type="submit"] {
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 300ms;
+}
+
+.name-field input[type="submit"]:hover {
+  background-color: yellow;
+  transform: scale(1.15);
+}
+
+.name-field p {
+  margin-top: 10px;
+}
+
+p {
+  font-weight: bolder;
+}
+
+.co {
+  text-decoration: none;
+  color: yellow;
+  font-size: 20px;
+}
+
+.ga {
+  position: absolute;
+  left: -16%;
+  bottom: 0;
+  padding: 37px;
+}
+
+.dr {
+  position: absolute;
+  left: 79.5%;
+  bottom: 0%;
+  padding: 37px;
+}
+
+.acceuill {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color:yellow;
+  bottom: 0%;
+  padding: 40px;
+  font-size: 30px;
+  left: 41.5%;
+  margin-top: 500px;
+}
+
+
+
+
+
+.acceuill:hover{
+  color: rgb(209, 43, 43);
+}
+
+#togglePassword {
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+  border-radius: 3px;
+  border: none;
+  transition: transform 200ms;
+}
+
+.acceuil:hover {
+  color: rgb(209, 43, 43);
+}
+
+.co:hover {
+  color: rgb(209, 43, 43);
+}
+
+.droit {
+  width: 48px;
+  position: absolute;
+  top: 1.8%;
+  left: 41.2%;
+}
+
+.gauche {
+  width: 48px;
+  position: absolute;
+  top: 1.8%;
+  left: 56.1%;
+}
+

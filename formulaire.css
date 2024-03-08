@@ -1,0 +1,118 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #3d3c3c;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px yellow;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 202, 5);
+}
+
+
+
+.dr{
+  position:absolute;
+  right: 37%;
+  padding: 25px;
+
+}
+
+.ga{
+  position: absolute;
+  right: 57.5%;
+  padding: 25px;
+
+
+
+}
+
+.container {
+  margin: 30px auto;
+  margin-bottom: 105px;
+  width: 80%;
+  padding: 20px;
+  background: #6e6a6a;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(255, 255, 2);
+  font-family: "Cinzel", serif;
+  font-size: 35px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background-color: #3d3c3c;
+  color: yellow;
+  accent-color: yellow;
+
+}
+
+input [type="checkbox"]{
+
+  accent-color: red;
+
+
+
+
+
+}
+
+
+
+
+
+button {
+  padding: 10px 20px;
+  background-color: yellow;
+  color:black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 11220ms;
+}
+
+button:hover {
+  background-color:yellow;
+ transform: scale(1.34) ;
+
+}
+
+.Logo{
+  position: absolute;
+
+  width: 300px;
+  top: 0;
+  left: -80px;
+
+
+}

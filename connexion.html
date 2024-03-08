@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Palace Food</title>
+    <link rel="stylesheet" href="connexion.css" />
+  </head>
+  <body>
+    <img class="droit" src="reseau.png" alt="rose" width="100px" />
+    <img class="gauche" src="reseau.png" alt="rose" width="100px" />
+    <h1>Connexion</h1>
+    <div class="name-field">
+      <form id="loginForm"> </form>
+      <form>
+        <label>Adresse Mail</label>
+        <input required id="email" type="email" />
+        <label>Mot de passe</label>
+        <div>
+          <input required id="mdp" type="password" />
+          <button type="button" id="togglePassword">
+            Afficher le mot de passe
+          </button>
+          <br />
+          <br />
+        </div>
+        <input id="co" type="submit" value="Connexion" />
+        <p>Vous n'avez pas de compte ? :</p>
+        <a class="co" href="inscription.html">Inscription</a>
+        </form>
+      </form>
+    </div>
+    <a class="acceuil" href="index.html"
+      >revenir à l'acceuil
+      <img class="dr" src="vin.png" width="48" alt="vin" /><img
+        class="ga"
+        src="rsv.png"
+        width="35"
+        alt="rsv"
+    /></a>
+
+    <script src="java.js"></script>
+
+    <script>
+      document
+        .getElementById("togglePassword")
+        .addEventListener("click", function () {
+          var mdpInput = document.getElementById("mdp");
+          if (mdpInput.type === "password") {
+            mdpInput.type = "text";
+            this.textContent = "Masquer le mot de passe";
+          } else {
+            mdpInput.type = "password";
+            this.textContent = "Afficher le mot de passe";
+          }
+        });
+
+      document.getElementById("co").addEventListener("click", function () {
+        var mdpInput = document.getElementById("mdp");
+        var savedMdp = window.localStorage.getItem("mdp");
+        var gmailInput = document.getElementById("email");
+        var savegmail = window.localStorage.getItem("email");
+        var nom = window.localStorage.getItem("nom")
+        
+
+        if (mdpInput.value !== savedMdp) {
+          alert("Mot de passe incorrect. Veuillez réessayer.");
+        }
+        if (gmailInput.value !== savegmail){
+          alert("Gmail inconnue")
+          
+       }
+
+if (mdpInput.value == savedMdp){
+if (gmailInput.value == savegmail){
+        alert("Connexion réussi ! Bienvenu à toi " +nom+ " ,Palace Food ")
+   }} 
+  
+  });
+
+  </script>
+  </body>
+</html>
