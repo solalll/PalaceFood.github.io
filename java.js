@@ -5,6 +5,9 @@ const nom = document.getElementById("nom");
 
 submit.addEventListener("click", function () {
   window.localStorage.setItem("mdp", mdp.value);
+window.localStorage.setItem("email",email.value);
+window.localStorage.setItem("nom",nom.value);
+
 });
 
 
